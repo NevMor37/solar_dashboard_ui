@@ -1,0 +1,38 @@
+<div class="container">
+
+  <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+<p class="form-group">
+    <label>Place</label>
+    <input type="text" ng-model="main.place" class="form-control" >
+    <button type="button" class="btn btn-primary" ng-click="main.place_change()">
+        Search
+    </button>
+</p>
+
+
+
+<div class="panel panel-default">
+            <div class="panel-heading">Percentage of Rainy Days</div>
+            <div class="panel-body">
+<canvas id="bar" class="chart chart-bar"
+  chart-data="main.data" chart-labels="main.labels" chart-series="main.series">
+</canvas>
+            </div>
+          </div>
+
+
+<div class="panel panel-default">
+            <div class="panel-heading">Yearly Solar Kw-H By Panel Direction</div>
+            <div class="panel-body">
+<canvas id="area" class="chart chart-radar"
+  chart-data="main.data2" chart-labels="main.labels2" chart-series="main.series2">
+</canvas>
+
+
+            </div>
+          </div>
+
+
+</div>
